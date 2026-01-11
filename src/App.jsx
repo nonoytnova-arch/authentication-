@@ -4,7 +4,7 @@ import Banner from "./components/Banner";
 import Product from "./components/Product";
 import ProductDetail from "./components/ProductDetail";
 import Footer from "./components/Footer";
-import Home from "./components/user account";
+import Home from "./components/Home";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import GoogleAuth from "./components/GoogleAuth";
