@@ -1,17 +1,34 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import Signup from "./components/Signup";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import Product from "./components/Product";
+import ProductDetail from "./components/ProductDetail";
+import Footer from "./components/Footer";
+import Home from "./components/user account";
 import Signin from "./components/Signin";
+import Signup from "./components/Signup";
 import GoogleAuth from "./components/GoogleAuth";
-
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Navigate to="/signin" />} />
-      <Route path="/signup" element={<Signup />} />
+    <>
+      <Navbar />
+      <Banner />
+      
+
+      <Routes>
+        <Route path="/" element={<Product />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
       <Route path="/signin" element={<Signin />} />
       <Route path="/google-auth" element={<GoogleAuth />} />
-    </Routes>
+      </Routes>
+      <Home />
+      <Footer />
+    </>
   );
 }
 
 export default App;
+
