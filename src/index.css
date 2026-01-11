@@ -1,3 +1,414 @@
 body {
-  background: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e3e6e6;
 }
+
+/* NAVBAR */
+.navbar {
+  height: 60px;
+  background-color: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 15px;
+}
+
+/* Logo */
+
+.login__logo {
+  margin-top: 20px;
+  width: 100px;
+  object-fit: contain;
+}
+
+
+
+/* Location */
+.nav-location {
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-location strong {
+  display: block;
+}
+
+/* SEARCH BAR FIX */
+.nav-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 4px;
+  background: white;
+}
+
+/* Category dropdown */
+.search-select {
+  width: 60px;
+  border: none;
+  background-color: #f3f3f3;
+  padding: 0 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Input */
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Search Button */
+.search-btn {
+  width: 45px;
+  border: none;
+  background-color: #febd69;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* Hover effect like Amazon */
+.search-btn:hover {
+  background-color: #f3a847;
+}
+
+
+/* Country */
+.nav-country {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-country img {
+  width: 20px;
+}
+
+/* Nav items */
+.nav-item {
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-item strong {
+  display: block;
+}
+
+/* Cart */
+.nav-cart {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 1px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.card img {
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.rating {
+  color: #ffa41c;
+}
+
+.price {
+  font-weight: bold;
+  color: #b12704;
+}
+
+/* DETAIL PAGE */
+.detail {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  background: white;
+}
+
+.detail img {
+  width: 300px;
+}
+
+button {
+  background: #ffd814;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* FOOTER */
+.footer {
+  background-color: #232f3e;
+  color: white;
+  margin-top: 30px;
+}
+
+.footer-top {
+  background-color: #37475a;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links p {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-links p:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #131a22;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+.amazon-banner {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.amazon-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fade 1s ease-in-out;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 400px;
+}
+
+.banner-content h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.banner-content p {
+  font-size: 16px;
+}
+
+/* Fade animation */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .amazon-banner {
+    height: 160px;
+  }
+
+  .banner-content h2 {
+    font-size: 20px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+}
+/* HOME */
+.home {
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.amazon-btn {
+  background:#f2c963;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login {
+  background-color: white;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__logo {
+  margin-top: 20px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.login__container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid lightgray;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.login__container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.login__container > form > h5 {
+  margin-bottom: 5px;
+}
+
+.login__container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+}
+
+.login__signInButton {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+.login__registerButton {
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auth-container {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-box {
+  width: 360px;
+  background: #e3e6e6;
+  padding: 35px 30px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 25px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.auth-box button {
+  background: #f2c963;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+.auth-box button:hover {
+  background: #f2c963;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.google-btn img {
+  width: 18px;
+}
+
+.switch {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch a,
+.google-link {
+  color: #525ec4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.google-link {
+  display: block;
+  margin-top: 12px;
+}
+
+.error {
+  background: #ffe6e6;
+  color: #c53030;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  }
